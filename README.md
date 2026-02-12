@@ -9,6 +9,19 @@ A simple AI-powered CLI that processes simulated clinic phone transcripts and ou
 - Rule-based urgency classification to ensure deterministic and explainable triage
 - Schema validation using Zod to guarantee clean, typed JSON output
 
+## Approach
+LLM Layer (OpenAI API)
+- Handles natural language understanding and entity extraction from conversational input.
+
+Deterministic Business Logic
+- Urgency classification is rule-based to ensure predictable and explainable behavior rather than relying on probabilistic model output.
+
+Validation Layer (Zod)
+- Ensures all outputs conform to a strict schema before being returned, preventing malformed AI responses from propagating.
+
+CLI Interface
+- Provides a simple, testable interface to simulate real ingestion of transcripts.
+
 ## Setup
 
 ```bash
@@ -43,4 +56,6 @@ npm start "uh yeah hi this is uh David Levi I think my birthday is July 4 1975 a
 - Stronger structured outputs via function calling
 - More advanced urgency detection (for this task we used hard coded values)
 - Validation middleware for security
-- Multilingual support
+- Multilingual support to handle non-English callers
+- Introduce confidence scoring and human-review routing for uncertain cases
+- Package the service as an API endpoint for integration with EMR/scheduling systems
