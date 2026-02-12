@@ -10,20 +10,19 @@ A simple AI-powered CLI that processes simulated clinic phone transcripts and ou
 - Schema validation using Zod to guarantee clean, typed JSON output
 
 ## Approach
-LLM Layer (OpenAI API)
+**LLM Layer (OpenAI API)**
 - Handles natural language understanding and entity extraction from conversational input.
 
-Deterministic Business Logic
+**Deterministic Business Logic**
 - Urgency classification is rule-based to ensure predictable and explainable behavior rather than relying on probabilistic model output.
 
-Validation Layer (Zod)
+**Validation Layer (Zod)**
 - Ensures all outputs conform to a strict schema before being returned, preventing malformed AI responses from propagating.
 
-CLI Interface
+**CLI Interface**
 - Provides a simple, testable interface to simulate real ingestion of transcripts.
 
 ## Setup
-
 ```bash
 npm install
 ```
@@ -51,6 +50,9 @@ npm start "This is Michael Brown, born January 3rd 1965. I need a refill for my 
 ```bash
 npm start "uh yeah hi this is uh David Levi I think my birthday is July 4 1975 and I need my blood pressure meds refilled please call me at 212 555 9988 thanks"
 ```
+
+# Demo video (LOOM)
+https://www.loom.com/share/f3e245b7053d4ccfa369ba16197c27ad
 
 ## Improvements (Future Work)
 - Stronger structured outputs via function calling
