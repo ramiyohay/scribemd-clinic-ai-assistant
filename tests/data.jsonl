@@ -1,0 +1,7 @@
+{"transcript":"Hi, this is Sarah Cohen, born 03/12/1988. I need to book an appointment because I’ve had chest pain for two days. Please call me back at 310-555-2211.","expected_intent":"urgent_medical_issue","expected_urgency":"high"}
+
+{"transcript":"Hello, my name is David Levi, DOB 07/04/1975. I need a refill on my blood pressure medication. Call me at 212-555-9988.","expected_intent":"prescription_refill","expected_urgency":"low"}
+
+{"transcript":"This is Miriam Gold. I was born January 5th 1990. I have a fever and it’s getting worse. My number is 646-222-3333.","expected_intent":"urgent_medical_issue","expected_urgency":"medium"}
+
+{"transcript":"Hi, it’s Jonathan Stein. I have a billing question about my last invoice. Call me at 555-123-4567.","expected_intent":"billing_question","expected_urgency":"low"}
