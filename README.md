@@ -4,10 +4,10 @@
 A simple AI-powered CLI that processes simulated clinic phone transcripts and outputs structured JSON.
 
 ## Features
-- Intent detection
-- Structured data extraction
-- Rule-based urgency classification
-- Schema validation using Zod
+- Intent detection using an LLM (OpenAI GPT-4o-mini) for natural language understanding
+- Structured data extraction from unstructured transcripts (name, DOB, phone, reason for call)
+- Rule-based urgency classification to ensure deterministic and explainable triage
+- Schema validation using Zod to guarantee clean, typed JSON output
 
 ## Setup
 
